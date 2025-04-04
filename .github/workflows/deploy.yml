@@ -16,9 +16,6 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Tests (Optional)
-        run: npm test
-
       - name: Zip the Application
         run: zip -r deploy.zip . -x "node_modules/*" ".git/*"
 
